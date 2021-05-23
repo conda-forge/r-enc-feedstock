@@ -41,13 +41,14 @@ test:
 
 about:
   home: https://github.com/krlmlr/enc
-  license: GPL-3
+  license: GPL-3.0-only
   summary: ' Implements an S3 class for storing ''UTF-8'' strings, based on regular character
     vectors. Also contains routines to portably read and write ''UTF-8'' encoded text
     files, to convert all strings in an object to ''UTF-8'', and to create character
     vectors with various encodings.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
